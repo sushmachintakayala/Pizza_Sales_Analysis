@@ -1,0 +1,10 @@
+create database Pizza;
+drop database Pizza;
+create database Pizza;
+use pizza;
+select * from pizza_sales;
+select sum(total_price) Total_Revenue from pizza_sales;
+select sum(total_price)/count(distinct order_id) Avg_Order_Value from pizza_sales;
+select sum(quantity) Total_Pizzas_Sold from pizza_sales;
+select count(distinct order_id) Total_Orders from pizza_sales;
+select sum(quantity)/count(distinct order_id) from pizza_sales;
